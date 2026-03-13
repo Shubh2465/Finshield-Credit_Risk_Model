@@ -104,8 +104,8 @@ Borrower → District → Zone → State → Core Banking System
 - Regional model calibration
 
 ## Sample Output
-![Select Parameters From Model](photo_2026-03-13_14-05-24.jpg)
+![UI](Screen_Shots/UI.jpg)
 
-![SHAP Explnation](photo_2026-03-13_14-05-37.jpg)
+![SHAP Explnation](Screen_Shots/SHAP-Output.jpg)
 
-![Contributors for the Prediction](photo_2026-03-13_14-06-19.jpg)
+![Group Contributors for the Prediction](Screen_Shots/Group_Contributer.jpg)
