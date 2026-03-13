@@ -1,4 +1,4 @@
-Shubh03, [3/13/26 1:35 PM]
+
 %%writefile app.py
 # app.py
 import os, pickle, warnings
@@ -112,7 +112,6 @@ def train_and_save(df: pd.DataFrame, sector: str):
 
 def load_model(sector: str):
 
-Shubh03, [3/13/26 1:35 PM]
 model_path, features_path, district_path = model_paths(sector)
     with open(model_path, "rb") as f: pipe = pickle.load(f)
     with open(features_path, "rb") as f: feats = pickle.load(f)
@@ -204,7 +203,6 @@ pmkisan_score = st.slider("PM-Kisan Score", 0.0, 1.0, 0.5)
 svanidhi_score = st.slider("SVANidhi Score", 0.0, 1.0, 0.5)
 jan_dhan_score = st.slider("Jan Dhan Score", 0.0, 1.0, 0.7)
 
-Shubh03, [3/13/26 1:35 PM]
 geo_stability = st.number_input("Geo Stability", 0.0, 1.0, float(dvals["geo_stability"]), 0.01)
 npa_agri = st.number_input("NPA Agri", 0.0, 1.0, float(dvals["npa_agri"]), 0.01)
 telecom_density = st.number_input("Telecom Density", 0.0, 1.0, float(dvals["telecom_density"]), 0.01)
@@ -293,7 +291,6 @@ if st.button("🔮 Predict Risk"):
         for g, flist in groups.items():
             contrib[g] = np.sum([abs(phi[model_features.index(f)]) for f in flist if f in model_features])
 
-Shubh03, [3/13/26 1:35 PM]
 weights = {
             "Agriculture": {"capacity":0.8, "digital":1.2, "schemes":2.0, "district":1.0, "formal":0.0},
             "Informal":    {"capacity":0.8, "digital":1.2, "schemes":1.8, "district":1.0, "formal":0.0},
